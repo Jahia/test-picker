@@ -1,0 +1,16 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jmix:testNodeType] mixin
+
+[jnt:nodeType1] > jnt:content, jmix:basicContent, jmix:testNodeType, jmix:editorialContent
+ - prop1 (string)
+
+[jnt:nodeType2] > jnt:content, jmix:basicContent, jmix:testNodeType, jmix:editorialContent
+ - prop2 (string)
+
+[jnt:nodeType3] > jnt:content, jmix:basicContent, jmix:testNodeType, jmix:editorialContent
+ - prop3 (string)
+
+[jnt:nodeTypePicker] > jnt:content, jmix:basicContent
+ - nodeTypeRef (weakreference, picker[type='testNodeType'])
